@@ -1,0 +1,24 @@
+﻿.borda-inferior {
+    border-bottom: 4px solid rgb(125, 187, 230);
+}
+
+.borda {
+    border: 1px solid red;
+}
+
+.barra-pesquisa {
+    margin-top: 20px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.texto-git {
+    font-style: italic;
+    font-size: 14px;
+}

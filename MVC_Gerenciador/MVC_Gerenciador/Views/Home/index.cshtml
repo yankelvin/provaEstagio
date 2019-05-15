@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Meus Respositórios";
+}
+
+<section class="row mt-4">
+    <div class="col-md-4 mt-4">
+        <h4 class="texto-git">"A principal plataforma de desenvolvimento de software do mundo."</h4>
+    </div>
+    <div class="col-md-8">
+        <input class="form-control barra-pesquisa d-inline" placeholder="Pesquisar respositórios - GitHub" />
+        <button onclick="pesquisa_git()" class="btn btn-info d-inline">Pesquisar</button>
+    </div>
+</section>
+
+<hr />
+
+<h2 class="text-center">Meus Repositórios</h2>
+<section class="row">
+    <div class="col-md-4">
+        <h3>@ViewBag.NomeRepo1</h3>
+        <p>Repositório criado para modelar diagrama de classes com base na disciplina de Engenharia de Software.</p>
+        <p>@Html.ActionLink("Mais informações", "Repo1", "Home", new { @class = "btn btn-default" })</p>
+    </div>
+
+    <div class="col-md-4">
+        <h3>@ViewBag.NomeRepo2</h3>
+        <p>Bot para Telegram criado para trazer informações sobre o mundo dos bot's.</p>
+        <p>@Html.ActionLink("Mais informações", "Repo2", "Home", new { @class = "btn btn-default" })</p>
+    </div>
+
+    <div class="col-md-4">
+        <img src="https://github.githubassets.com/images/modules/open_graph/github-mark.png" width="100%"/>
+    </div>
+</section>
+
+<hr />
+
+<h2 class="text-center">Favoritos</h2>
+<!-- Requisito não implementado :( -->
+<section id="favoritos" class="row">
+    <div class="col-md-4">
+        <img src="https://github.githubassets.com/images/modules/open_graph/github-octocat.png" width="100%" />
+    </div>
+
+    <div class="col-md-4">
+        <h3>@ViewBag.NomeRepo1</h3>
+        <p>Repositório criado para modelar diagrama de classes com base na disciplina de Engenharia de Software.</p>
+        <p>@Html.ActionLink("Mais informações", "Repo1", "Home", new { @class = "btn btn-default" })</p>
+    </div>
+
+    <div class="col-md-4">
+        <h3>@ViewBag.NomeRepo2</h3>
+        <p>Bot para Telegram criado para trazer informações sobre o mundo dos bot's.</p>
+        <p>@Html.ActionLink("Mais informações", "Repo2", "Home", new { @class = "btn btn-default" })</p>
+    </div>
+</section>
